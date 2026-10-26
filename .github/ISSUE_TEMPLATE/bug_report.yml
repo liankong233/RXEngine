@@ -1,0 +1,40 @@
+name: Bug report
+description: 报告可复现的缺陷
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先确认使用的是最新代码，并搜索已有 Issue。安全问题请勿在此提交，按 SECURITY.md 私下报告。
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 现象
+      description: 发生了什么？与预期有什么不同？
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 请给出最小可复现脚本（run_js 代码或调用序列）。
+      render: javascript
+    validations:
+      required: true
+  - type: textarea
+    id: status
+    attributes:
+      label: 环境信息
+      description: 版本/提交哈希、OS、Python、IDA 版本，以及 engine_status / engine_diagnostics 输出（注意脱敏）。
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 相关输出
+      description: 错误信封、traceback、日志（请删去敏感路径与样本信息）。
+      render: text
+    validations:
+      required: false

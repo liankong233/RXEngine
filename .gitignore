@@ -1,0 +1,34 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# IDA databases and analysis output
+*.idb
+*.i64
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+*.bak
+samples/
+artifacts/
+
+# Local test binary (never publish analysis samples)
+sample.exe
+
+# Local agent tooling and workflow state
+.claude/
+.superpowers/

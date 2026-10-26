@@ -1,0 +1,17 @@
+RXEngine
+Copyright 2026 liankong <xhsw.new@qq.com>
+
+This product is licensed under the Apache License, Version 2.0.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Third-party dependencies (IDA Pro / headless-ida, angr, claripy, qiling,
+unicorn, z3, capstone, keystone, STPyV8, pyelftools and others) are listed in
+requirements.txt and pyproject.toml and remain under their respective licenses.
+RXEngine does not redistribute these dependencies. See THIRD_PARTY_NOTICES.md
+for adapted code and dependency license notes.
+
+IDA Pro is a commercial product of Hex-Rays SA. RXEngine only invokes a
+locally installed headless IDA executable; users are responsible for holding a
+valid IDA license.
